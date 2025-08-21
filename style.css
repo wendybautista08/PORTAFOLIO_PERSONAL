@@ -2,20 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #4e2c40;
 }
 body {
     font-family: 'Monserrat', sans-serif;
     overflow-x: hidden;
-    color: rgb(243, 195, 225);
-    
 }
 
 .menu ul{
     list-style: none;
     display: flex;
     justify-content:left;
-    background-color: #e0bbdb;
+    background-color: #e9c691;
 }
 
 .menu ul li {
@@ -26,19 +23,19 @@ body {
 }
 .menu ul li a {
   text-decoration: none;
-  color:rgb(255, 255, 255); /* opcional para que se vea mejor sobre fondo oscuro */
+  color: white; /* opcional para que se vea mejor sobre fondo oscuro */
   font-weight: 1000;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
 }
 
 .menu ul li a:hover {
-  color: #050505; /* Cambia el color al pasar el mouse */
+  color: #f1d991; /* Cambia el color al pasar el mouse */
 }
 
 .header{
-    background-image: url("IMG/46ffb08c-e187-49eb-9f2f-0cb1e46d4914.jpeg");
-    padding: 10px;
+    background-image: url("IMG/pan.jpeg");
+    padding: 20px;
     background-size: cover;   
     text-align: center;
     display : flex;
@@ -46,7 +43,7 @@ body {
     justify-content: center ;
     align-items: center;
    
-    height: 80vh;
+    height: 35vh;
 }
 
 .header h1 {
@@ -63,7 +60,7 @@ body {
 .header span{
     display: block;
     font-size: 4.1rem;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.966);
     
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 200px;
@@ -78,8 +75,8 @@ body {
     margin-top: 60px;
 }
 .header-text  button{
-    background-color: #cca7c6;
-    color: rgb(0, 0, 0);
+    background-color: #f1d991;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -88,8 +85,9 @@ body {
     font-weight: bold;
     margin-top: 60px;
     
-}.header{
-    background-image: url("IMG/46ffb08c-e187-49eb-9f2f-0cb1e46d4914.jpeg");
+}
+.header{
+    background-image: url("IMG/pepito.jpeg");
     padding: 20px;
     background-size: cover;   
     text-align: center;
@@ -98,7 +96,7 @@ body {
     justify-content: center ;
     align-items: center;
    
-    height: 100vh;
+    height: 200vh;
 }
 .header h1 {
     font-size: 3rem;
@@ -122,8 +120,8 @@ body {
 }
 
 .header-text  button{
-    background-color: #dab9dd;
-    color: rgb(17, 17, 17);
+    background-color: #f1d991;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -154,7 +152,7 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   font-family: 'Oswald', sans-serif;
-  color: #ddb1da;
+  color: #f1d991;
 }
 
 .tecnologias-icon:hover .tecnologias-icon-text {
@@ -167,7 +165,7 @@ body {
     align-items:flex-start;
     flex-direction: column;
     margin-top: 40px;
-    background-color: #4c354db4;
+    background-color: rgba(243, 244, 230, 0.348);
     padding: 30px;
     padding-bottom: 100px;
 }
@@ -243,7 +241,6 @@ body {
 
 .habi-seccion-dos-img1 img {
   position: absolute;
-  
   width: 250px;
   top: 30%;
   left: 40%;
@@ -294,7 +291,7 @@ body {
 .sobre-mi-texto button {
   align-self: flex-start;
   padding: 12px 24px;
-  background-color: white;
+  background-color: black;
   color: white;
   border: none;
   cursor: pointer;
@@ -305,7 +302,7 @@ body {
 }
 
 .footer{
-    background-color: hsl(336, 31%, 35%);
+    background-color: #333;
     color: white;
     display: flex;
     flex-direction: column;
@@ -362,6 +359,10 @@ body {
 
 }
 
+
+/* ====== ESTILOS BASE (ESCRITORIO) ====== */
+/* Tu código original se mantiene igual aquí */
+
 /* ====== RESPONSIVIDAD ====== */
 
 /* Tablets (pantallas medianas) */
@@ -377,6 +378,7 @@ body {
   .header {
     height: auto;
     padding: 40px 20px;
+    background-position: center;
   }
   .header h1 {
     font-size: 2.2rem;
@@ -413,7 +415,7 @@ body {
   }
 }
 
-/* Móviles */
+/* Móviles (pantallas pequeñas) */
 @media (max-width: 768px) {
   .menu ul {
     flex-direction: column;
