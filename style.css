@@ -361,3 +361,113 @@ body {
 
 
 }
+
+/* ====== RESPONSIVIDAD ====== */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 992px) {
+  .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menu ul li {
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .header {
+    height: auto;
+    padding: 40px 20px;
+  }
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  .header span {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+  .habi-secciones {
+    flex-direction: column;
+    align-items: center;
+  }
+  .habi-seccion-dos {
+    flex-direction: column;
+    height: auto;
+    margin-top: 50px;
+  }
+  .habi-seccion-dos-img1 img,
+  .habi-seccion-dos-img2 img {
+    position: static;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .sobre-mi {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+  }
+  .sobre-mi-img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu ul li {
+    margin: 10px 0;
+  }
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .header span {
+    font-size: 2rem;
+  }
+  .header p {
+    font-size: 1rem;
+  }
+  .tecnologias {
+    font-size: 28px;
+    gap: 15px;
+  }
+  .habi-item .habi-numero {
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  .habi-descrip h3 {
+    font-size: 1rem;
+  }
+  .habi-descrip p {
+    font-size: 0.9rem;
+  }
+  .footer-links ul,
+  .footer-contacto ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-contacto li {
+    padding-left: 0;
+    margin: 5px 0;
+  }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.4rem;
+  }
+  .header span {
+    font-size: 1.6rem;
+  }
+  .header p {
+    font-size: 0.9rem;
+  }
+  .tecnologias {
+    font-size: 22px;
+  }
+}
